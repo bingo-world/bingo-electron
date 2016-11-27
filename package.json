@@ -1,0 +1,23 @@
+{
+  "name": "bingo-electron",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingo-world/bingo-electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bingo-world/bingo-electron/issues"
+  },
+  "homepage": "https://github.com/bingo-world/bingo-electron#readme",
+  "dependencies": {
+    "bingo-core": "github:bingo-world/bingo-core",
+    "electron": "^1.4.8"
+  }
+}
