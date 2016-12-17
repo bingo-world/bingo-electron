@@ -11,3 +11,9 @@ build_script:
 test_script:
   - npm test
 
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      secure: $env:slack
+    channel: development
+
