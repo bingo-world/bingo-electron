@@ -1,10 +1,13 @@
 {
   "name": "bingo-electron",
   "version": "0.0.1",
-  "description": "",
+  "description": "Bingo app",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "lint": "eslint **/*.js",
+    "test": "npm run lint",
+    "start": "electron .",
+    "dist:win": "build --win --x64"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,17 @@
   },
   "homepage": "https://github.com/bingo-world/bingo-electron#readme",
   "dependencies": {
-    "bingo-core": "github:bingo-world/bingo-core",
-    "electron": "^1.4.8"
+    "bingo-core": "github:bingo-world/bingo-core"
+  },
+  "devDependencies": {
+    "electron": "^1.4.12",
+    "electron-builder": "^10.8.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "build": {
+    "appId": "bingo.world"
   }
 }
