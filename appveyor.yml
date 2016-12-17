@@ -11,9 +11,20 @@ build_script:
 test_script:
   - npm test
 
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: %GH_TOKEN%
+  artifact: ./dist/bingo-electron Setup *.exe
+  draft: false
+  prerelease: false
+  on:
+    branch: master
+    appveyor_repo_tag: true
+
 notifications:
   - provider: Slack
     incoming_webhook:
-      secure: $env:slack
+      secure: %SLACK%
     channel: development
 
