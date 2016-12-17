@@ -12,6 +12,7 @@ test_script:
   - npm test
 
 deploy:
+  description: 'automatic appveyor deploy'
   provider: GitHub
   auth_token:
     secure: oKEM3xVHhwJWuMKJFGYfo39b7t7N8LhCCktM2qzxLzKFaAbHnOIvns/LL4ndDDPQ
@@ -19,7 +20,6 @@ deploy:
   draft: false
   prerelease: false
   on:
-    branch: master
     appveyor_repo_tag: true
 
 notifications:
