@@ -17,5 +17,5 @@ test_script:
   # run tests
   - npm test
 
-build_script:
+deploy_script:
   - npm run dist:win
