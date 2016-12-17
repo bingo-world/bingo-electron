@@ -14,7 +14,7 @@ test_script:
 deploy:
   provider: GitHub
   auth_token:
-    secure: %GH_TOKEN%
+    secure: oKEM3xVHhwJWuMKJFGYfo39b7t7N8LhCCktM2qzxLzKFaAbHnOIvns/LL4ndDDPQ
   artifact: ./dist/bingo-electron Setup *.exe
   draft: false
   prerelease: false
@@ -25,6 +25,6 @@ deploy:
 notifications:
   - provider: Slack
     incoming_webhook:
-      secure: %SLACK%
+      secure: yH5F7E9Y/9Oxdha+OVmuhVcPiqTOOSP3+Y1Tl7viZjLPoKav3euob5O5H6Td3zBXTmXx3d3P8zdQWSsfMwWpgTo1zAt2ed9D56FC2RYyCMw=
     channel: development
 
