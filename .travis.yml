@@ -3,10 +3,14 @@ node_js:
 - 6.9.1
 notifications:
   slack: bingoworld:8jWEUWQ4Pgg6PEqANalofADj
+before_deploy:
+- npm run dist:win 
 deploy:
   provider: releases
   api_key:
     secure: IRtMGPHd9JT3Tcvb2sJW/EQIN+QgXcBNMnwnzL2R/WIQoOy1vTh8SiwW6leLKatkYXVhdy349e6EAXQmI7gWbjmiXC0gkm1/hh76DFbMB02lJL2ZowD9Q0hpltRyaECNk4WPxBJAThSbdQZs/l/Y1+vIc66uBwGaMSfyXwrYlJfWqWj6P9x/V+oHY+SY0IDjsd76hf8VLbYbi4+xAaAfBf22u0eel3lD792t0279XM06BaR7uVWXROKiyzusu4DONTJMG35qMhqqTWykhrMfPx+9Ax3YhyMUO4gpcjbzRdoHImm5cb0juuB4P9Rkpu+SIgkjsOp3D/JgX89XSePPnMNotxhb0i9Rf7skuwtyInIqf4tIHzNISXPn5sUelos8jjEMFD1QW/MewiIZUKyDgbMv/yWJCJvSOH/olEkCkaTKY0VYM1h2HHwe4LqYKQx9mTTTcHpiBFh+g3OmQ4MOcYZaZDaOv+jWgHVizbJGq3T4va1mJZPr8LyElBSUmVCWMvoQsbMB/jlOLwZrjZ2hTFWEAIvY/HWdy6w2Gth0FtIvfGnBIPZe15nLH1U4x7y5v19rMpOaffYkj5QGeWQvL7sSJBI4/mCbNbVr/4+eROyLVEMJjuchU4DQh3+bQ8TuLAXuogSCfywg14B1E/sZYR9hbw2fGgYk3lbCKfq/Zxc=
-  file: "./dist/bingo.exe"
+  file: "./dist/bingo-electron Setup *.exe"
+  file_glob: "true"
+  skip_cleanup: true
   on:
     repo: bingo-world/bingo-electron
