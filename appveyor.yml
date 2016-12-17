@@ -11,12 +11,16 @@ build_script:
 test_script:
   - npm test
 
+artifacts: 
+  - path: ./dist/bingo-electron Setup *.exe
+    name: bingosetup
+
 deploy:
   description: 'automatic appveyor deploy'
   provider: GitHub
   auth_token:
     secure: oKEM3xVHhwJWuMKJFGYfo39b7t7N8LhCCktM2qzxLzKFaAbHnOIvns/LL4ndDDPQ
-  artifact: ./dist/bingo-electron Setup *.exe
+  artifact: bingosetup
   draft: false
   prerelease: false
   on:
