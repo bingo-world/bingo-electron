@@ -12,7 +12,7 @@ test_script:
   - npm test
 
 artifacts: 
-  - path: ./dist/bingo-electron Setup *.exe
+  - path: dist\*.exe
     name: bingosetup
 
 deploy:
