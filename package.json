@@ -1,6 +1,6 @@
 {
   "name": "bingo-electron",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Bingo app",
   "main": "index.js",
   "scripts": {
