@@ -13,7 +13,9 @@ function createWindow() {
         slashes: true
     }));
 
-    win.webContents.openDevTools();
+    win.webContents.on('did-finish-load', () => {
+        win.webContents.send('version', process.env.npm_package_version);
+    });
 
     win.on('closed', () => {
         win = null;
