@@ -3,6 +3,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 #container {
     margin: 0 10px;
 }
@@ -36,14 +40,28 @@ header h2 {
   border-width: 0;
   outline: none;
   border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
   background-color: #2ecc71;
   color: #ecf0f1;
+  font-weight: 800;
   font-size: 1rem;
 }
 
 .actionButton:hover, .actionButton:focus {
   background-color: #27ae60;
+}
+
+.generated-number{
+    border-width: 0;
+    outline: none;
+    border-radius: 50px;        
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color:black;
+    font-weight: 800;
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .actionButton > * {
@@ -62,16 +80,26 @@ td {
 
 td.prefix {
     font-weight: bold;
+    font-size: 3rem;  
+    padding-right: 2rem;
 }
 
-td.value {
-    font-size: 1rem;
+td.value {    
     color: grey;
+    font-size: 2rem;
+    padding-right: 1rem;    
+    padding-left: 1rem;
 }
 
 td.found {
-    font-weight: bold;
+    font-weight: 700;    
+    border-width: 2px;
+    border-color: black;    
     color: black;
+    background:#2ecc71;
+    font-size: 2rem;   
+    padding-right: 1rem;    
+    padding-left: 1rem; 
 }
 
 #content textarea {
