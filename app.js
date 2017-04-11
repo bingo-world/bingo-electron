@@ -10,7 +10,7 @@
         var generatedCombinationLabel = document.getElementById('generated-combination');
         var nextCombinationButton = document.getElementById('next-combination');
         var newGame = document.getElementById('new-game');
-        var allCombinationsAreGenerated = 'All combinations are generated';
+        var allCombinationsAreGenerated = '/';
         const versionHeader = document.getElementById('version-header');
         const table = document.getElementById('generated-table');
 
@@ -51,7 +51,7 @@
         }
 
         function generateRow(prefix, from, to) {
-            let row = document.createElement('tr');
+            let row = document.createElement('tr');            
             row.appendChild(generateCell(prefix, prefix));
             for (let i = from; i <= to; i++) {
                 row.appendChild(generateCell(prefix, i));

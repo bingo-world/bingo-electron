@@ -4,11 +4,7 @@ html {
 }
 
 body {
-    background-color: antiquewhite;
-}
-
-#container {
-    margin: 0 10px;
+    background-color: #e9e8c0;
 }
 
 header {
@@ -28,67 +24,65 @@ header h2 {
     font-weight: bold;
 }
 
-#content {
-    width: 100%;
-}
-
-#content .row {
-    margin-bottom: 10px;
-}
-
 .actionButton {
   border-width: 0;
   outline: none;
   border-radius: 2px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-  background-color: #2ecc71;
+  background-color:  #05829a;
   color: #ecf0f1;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
-.actionButton:hover, .actionButton:focus {
-  background-color: #27ae60;
+.actionButton:hover {
+  background-color: #78c9d8;
 }
 
 .generated-number{
-    border-width: 0;
+    display: inline-block;        
+    border-width: 0;        
     outline: none;
-    border-radius: 50px;        
+    border-radius: 100px;        
     box-shadow: 0 5px 4px rgba(0, 0, 0, .6);
-    background-color: #2ecc71;
-    color:black;
+    background-color: #05829a;
+    color: #e9e8c0;
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 6rem;    
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem;    
 }
 
-.actionButton > * {
+/*.actionButton > * {
   position: relative;
-}
+}*/
 
 .actionButton span {
-  display: block;
+  display: inline-block;
   padding: 12px 24px;
 }
 
 td {
-    text-align: center;
-    font-size: 1.5rem;
+    text-align: center;    
 }
 
 td.prefix {
     font-weight: bold;
-    font-size: 3rem;  
+    font-size: 5rem;  
     padding-right: 2rem;
 }
 
 td.value {    
     color: grey;
-    font-size: 2rem;
+    font-size: 4rem;
     padding-right: 1rem;    
     padding-left: 1rem;
+}
+
+table {    
+    margin: 0px auto;
+    margin-top: 50px;
+    padding-top: 2rem;
 }
 
 td.found {
@@ -96,8 +90,8 @@ td.found {
     border-width: 2px;
     border-color: black;    
     color: black;
-    background:#2ecc71;
-    font-size: 2rem;   
+    background:  #05829a;
+    font-size: 4rem;   
     padding-right: 1rem;    
     padding-left: 1rem; 
 }
@@ -110,9 +104,8 @@ td.found {
 }
 
 footer {
+    float: right;
+    margin-top: 10rem;
+    margin-left: 10px;
     width: 100%;
-}
-
-footer p {
-    font-size: 0.75rem;
 }
