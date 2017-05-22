@@ -5,7 +5,11 @@ const path = require('path');
 let win;
 
 function createWindow() {
-    win = new BrowserWindow();
+    win = new BrowserWindow( 
+            { 
+                height: 800,
+                width: 1280
+            });
     //win.setFullScreen(true);
 
     win.loadURL(url.format({
