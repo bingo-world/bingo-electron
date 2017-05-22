@@ -6,11 +6,10 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow( 
-            { 
-                height: 800,
-                width: 1280
-            });
-    //win.setFullScreen(true);
+        { 
+            height: 800,
+            width: 1280
+        });    
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),

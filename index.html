@@ -17,17 +17,26 @@
             <h1>Bingo World</h1>
             <h2 id="version-header"></h2>
         </header>        
-        <div class="row">            
+        <table>
+            <tr style="width: 100%">
+                <td><button id="next-combination" class="actionButton"><span>Volgende nummer</span></button></td>
+                <td style="width: 10%"></td>
+                <td><span id="generated-combination" class="generated-number"></span></td>
+                <td style="width: 10%"></td>
+                <td><button id="new-game" class="actionButton"><span>Nieuw spel</span></tr>
+            </tr>
+        </table>
+        <!--<div class="row">            
             <div class="col-md-4 text-center"><button id="next-combination" class="actionButton"><span>Volgende nummer</span></button></div>                        
             <div class="col-md-4 text-center"><span id="generated-combination" class="generated-number"></span></div>
             <div class="col-md-4 text-center"><button id="new-game" class="actionButton"><span>Nieuw spel</span></button></div>
-        </div>        
+        </div>        -->
         <div class="row">
             <div id="generated-table" class="col-md-12">
             </div>
         </div>
     </div>
-    <div class="navbar navbar-fixed-bottom" style="margin-left: 10px">&copy; BingoWorld</div>    
+    <!--<div class="navbar navbar-fixed-bottom" style="margin-left: 10px">&copy; BingoWorld</div>    -->
     <script type="text/javascript" src="app.js"></script>
 </body>
 
