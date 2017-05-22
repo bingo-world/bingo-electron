@@ -6,7 +6,7 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow();
-    win.setFullScreen(true);
+    //win.setFullScreen(true);
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
