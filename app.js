@@ -21,7 +21,7 @@
         nextCombinationButton.addEventListener('click', function () {
             if (game.areCombinationsAvailable()) {
                 var nextCombination = game.nextCombination();
-                generatedCombinationLabel.textContent = nextCombination.prefix + nextCombination.value;
+                generatedCombinationLabel.textContent = nextCombination.prefix + " " + nextCombination.value;
                 markAsFound(generatedCombinationLabel.textContent);
             } else {
                 generatedCombinationLabel.textContent = allCombinationsAreGenerated;
@@ -66,7 +66,7 @@
             } else {
                 cell.classList.add('value');
             }
-            cell.setAttribute('id', prefix === value ? prefix : prefix + value);
+            cell.setAttribute('id', prefix === value ? prefix : prefix + " " + value);
             cell.textContent = value;
             return cell;
         }
